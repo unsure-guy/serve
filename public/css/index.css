@@ -1,5 +1,6 @@
 body{
     background-color: rgb(213, 221, 230);
+    
 }
 
 input{
@@ -8,6 +9,7 @@ input{
     margin: 0.2em;
     border-style: solid;
     border-color: rgb(174, 180, 174);
+
 }
 
 .button{

@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const hbs = require('hbs')
-
+const port = process.env.PORT || 3000
 
 
 const dir = path.join(__dirname , '../public')
@@ -59,6 +59,6 @@ app.get('/help' , (req , res)=>{
 app.get('*' , (req , res)=>{
     res.send('<h1>Error 404. This is a ghost page.</h1>')
 })
-app.listen(3000 , ()=>{
+app.listen(port , ()=>{
     console.log('Server Started')
 })
